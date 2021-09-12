@@ -1,0 +1,15 @@
+[package]
+name = "cors-proxy-rs"
+version = "0.1.0"
+edition = "2018"
+
+[dependencies]
+log = "*"
+pretty_env_logger = "*"
+tokio = { version = "*", features = [ "macros", "rt-multi-thread", "signal" ] }
+hyper = { version = "*", features = [ "server", "http1", "runtime", "client" ] }
+url = "*"
+hyper-tls = "*"
+anyhow = "*"
+serde_json = "*"
+structopt = "*"
